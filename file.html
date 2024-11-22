@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Previous head content remains same -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniBind</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pexels-googledeepmind-17484970.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .icon-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+        .hover-dark:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-white min-h-screen flex flex-col">
+    <!-- Navigation same as before -->
+     <!-- Navigation -->
+     <nav class="py-8 px-12 absolute w-full z-10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-3xl font-light text-white">UniBind</div>
+            <div class="space-x-12 text-white">
+                <a href="#technology" class="hover:text-blue-200">Technology</a>
+                <a href="#benefits" class="hover:text-blue-200">Benefits</a>
+                <a href="#services" class="hover:text-blue-200">Services</a>
+                <a href="#contact" class="hover:text-blue-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section min-h-screen flex items-center justify-center px-12">
+        <div class="max-w-6xl mx-auto text-center space-y-12">
+            <h1 class="text-7xl font-light leading-tight text-white">AI-Powered Molecular Glue Discovery</h1>
+            <p class="text-2xl text-gray-200 max-w-3xl mx-auto">From prediction to validation in days, not months</p>
+            <div class="pt-8">
+                <a href="#contact" class="inline-block border-2 border-white text-white px-12 py-4 text-lg hover:bg-white hover:text-black transition-colors">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section with black icons -->
+    <section id="technology" class="min-h-screen py-32 px-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-5xl font-light mb-24 text-center">Our Technology</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-24">
+                <div class="space-y-8 text-center">
+                    <div class="text-7xl text-gray-900">
+                        <i class="fas fa-atom icon-pulse"></i>
+                    </div>
+                    <h3 class="text-2xl font-light">Rapid Prediction</h3>
+                    <p class="text-gray-600 text-lg">AI-powered protein interaction modeling</p>
+                </div>
+                <div class="space-y-8 text-center">
+                    <div class="text-7xl text-gray-900">
+                        <i class="fas fa-dna icon-pulse"></i>
+                    </div>
+                    <h3 class="text-2xl font-light">Molecular Design</h3>
+                    <p class="text-gray-600 text-lg">Intelligent glue compound generation</p>
+                </div>
+                <div class="space-y-8 text-center">
+                    <div class="text-7xl text-gray-900">
+                        <i class="fas fa-microscope icon-pulse"></i>
+                    </div>
+                    <h3 class="text-2xl font-light">Large Scale Screening</h3>
+                    <p class="text-gray-600 text-lg">Cloud-native compound evaluation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section with black icons -->
+    <section id="benefits" class="min-h-screen flex items-center py-32 px-12">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-5xl font-light mb-24 text-center">Why Choose UniBind</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-24">
+                <div class="space-y-8 text-center">
+                    <div class="text-7xl text-gray-900">
+                        <i class="fas fa-bolt icon-pulse"></i>
+                    </div>
+                    <h3 class="text-2xl font-light">Rapid Results</h3>
+                    <p class="text-gray-600 text-lg">From prediction to analysis in days, not months</p>
+                </div>
+                <div class="space-y-8 text-center">
+                    <div class="text-7xl text-gray-900">
+                        <i class="fas fa-magnifying-glass icon-pulse"></i>
+                    </div>
+                    <h3 class="text-2xl font-light">Comprehensive Analysis</h3>
+                    <p class="text-gray-600 text-lg">Deep insights into molecular interactions</p>
+                </div>
+                <div class="space-y-8 text-center">
+                    <div class="text-7xl text-gray-900">
+                        <i class="fas fa-circle-check icon-pulse"></i>
+                    </div>
+                    <h3 class="text-2xl font-light">Proven Accuracy</h3>
+                    <p class="text-gray-600 text-lg">Validated against known molecular glues</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section with dark hover -->
+    <section id="services" class="min-h-screen py-32 px-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-5xl font-light mb-24 text-center">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="bg-white p-12 rounded-lg shadow-lg hover-dark transition-all duration-300">
+                    <h3 class="text-2xl font-light mb-6">Quick Screen</h3>
+                    <p class="text-gray-600 text-lg mb-8">Rapid screening for initial validation of your compounds</p>
+                    <a href="#contact" class="text-gray-900 hover:underline">Learn more →</a>
+                </div>
+                <div class="bg-white p-12 rounded-lg shadow-lg hover-dark transition-all duration-300">
+                    <h3 class="text-2xl font-light mb-6">Full Analysis</h3>
+                    <p class="text-gray-600 text-lg mb-8">Comprehensive molecular glue discovery program</p>
+                    <a href="#contact" class="text-gray-900 hover:underline">Learn more →</a>
+                </div>
+                <div class="bg-white p-12 rounded-lg shadow-lg hover-dark transition-all duration-300">
+                    <h3 class="text-2xl font-light mb-6">Custom Projects</h3>
+                    <p class="text-gray-600 text-lg mb-8">Tailored solutions for your specific needs</p>
+                    <a href="#contact" class="text-gray-900 hover:underline">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section with black accent -->
+    <section id="contact" class="min-h-screen flex items-center justify-center py-32 px-12">
+        <div class="max-w-4xl mx-auto text-center space-y-12">
+            <h2 class="text-5xl font-light">Ready to accelerate your discovery?</h2>
+            <p class="text-2xl text-gray-600">Contact us to get started</p>
+            <div class="pt-8">
+                <a href="mailto:partner@unibind.com" 
+                   class="text-2xl text-gray-900 hover:underline">partner@unibind.com</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
